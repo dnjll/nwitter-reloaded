@@ -56,6 +56,10 @@ export default function CreateAccount() {
       <Switcher>
         Don't have an account?<Link to ="/create-account">Create one &rarr;</Link>
       </Switcher>
+      <Switcher>
+            Forgot your password?
+            <Link to="/reset-password">Reset password&rarr;</Link>
+        </Switcher>
       <GithubButton/> 
     </Wrapper>
 

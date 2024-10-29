@@ -1,10 +1,12 @@
-import { GithubAuthProvider, signInWithPopup, signInWithRedirect } from "firebase/auth";
+import { GithubAuthProvider, sendPasswordResetEmail, signInWithPopup, signInWithRedirect } from "firebase/auth";
 import {styled} from "styled-components";
 import { auth } from "../firebase";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Input, Switcher, Wrapper } from "./auth-components";
+import { useState } from "react";
 
 const Button = styled.span`
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: white;
     font-weight: 500;
     width: 100%;
@@ -40,5 +42,7 @@ export default function GithubButton() {
             <Logo src="/github-logo.svg"/>
             Coninue with Github
         </Button>
+       
     );
 }
+

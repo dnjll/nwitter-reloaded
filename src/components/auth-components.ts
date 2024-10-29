@@ -28,6 +28,7 @@ export const Input = styled.input`
     border: none;
     width: 100%;
     font-size: 16px;
+    /* margin-bottom: 10px; */
     &[type="submit"] {
         cursor: pointer;
         &:hover{
