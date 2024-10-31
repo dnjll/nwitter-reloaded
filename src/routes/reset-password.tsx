@@ -1,9 +1,8 @@
-import { fetchSignInMethodsForEmail, sendPasswordResetEmail, SignInMethod } from "firebase/auth";
+import { fetchSignInMethodsForEmail, sendPasswordResetEmail } from "firebase/auth";
 import { useState } from "react";
 import { auth } from "../firebase";
 import { Form, Input, Wrapper,Switcher, Error} from "../components/auth-components";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 
 export default function ResetPassword() {
     const [email, setEmail] = useState<string>('');

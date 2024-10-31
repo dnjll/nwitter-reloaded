@@ -1,11 +1,9 @@
 import {
   collection,
-  getDocs,
   limit,
   onSnapshot,
   orderBy,
   query,
-  snapshotEqual,
 } from "firebase/firestore";
 import { styled } from "styled-components";
 import { db } from "../firebase";

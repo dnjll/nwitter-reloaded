@@ -1,10 +1,7 @@
-import { GithubAuthProvider, sendPasswordResetEmail, signInWithPopup, signInWithRedirect } from "firebase/auth";
+import { GithubAuthProvider, signInWithPopup } from "firebase/auth";
 import {styled} from "styled-components";
 import { auth } from "../firebase";
-import { Link, useNavigate } from "react-router-dom";
-import { Input, Switcher, Wrapper } from "./auth-components";
-import { useState } from "react";
-
+import {  useNavigate } from "react-router-dom";
 const Button = styled.span`
     margin-top: 20px;
     background-color: white;
